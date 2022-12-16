@@ -75,7 +75,7 @@ def fazer_login ():
 
         if verificar_login(nome, senha, False):
             sleep(0.7)
-            print(f'CADASTRO EFETUADO COM SUCESSO! É bom te ver por aqui {nome}!')
+            print(f'Login EFETUADO COM SUCESSO! É bom te ver por aqui {nome}!')
         else:
             print('APELIDO OU SENHA INCORRETOS!')
             sleep(1)
