@@ -20,6 +20,7 @@ sleep(1)
 #VERIFICAR SE O CADASTRO EXISTE OU ESTÁ CERTO
 def verificar_login (nome, senha, cadastro):
     dados_conta = open('dados_conta', 'r').read().split()
+    print('dados')
     for i in range(0, len(dados_conta), 2):
             dado_nome = dados_conta[i]
             dado_senha = dados_conta[i + 1]
@@ -31,7 +32,8 @@ def verificar_login (nome, senha, cadastro):
                     return True    
                 else: 
                     return False
-    return False
+    print('tureee')
+    return True
 
 #CRIAR CONTA
 def criar_conta ():
